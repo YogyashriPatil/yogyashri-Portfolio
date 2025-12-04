@@ -1,0 +1,4 @@
+body {
+  padding-top: var(--header-height);
+  background: #070d0c; /* Dark background looks best */
+}
