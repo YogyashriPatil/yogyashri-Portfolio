@@ -9,9 +9,11 @@ function App() {
   
   return (
     <div>
-      <AnimatedBG />
-      <Header name='Yogyashri'/>
-      <Info />
+      {/* <AnimatedBG /> */}
+      <div>
+        <Header name='Yogyashri'/>
+        <Info />
+      </div>
     </div>
   )
 }

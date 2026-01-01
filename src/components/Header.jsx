@@ -7,7 +7,7 @@ export default function Header({ name }) {
     <header className="site-header">
       <div className="header-inner">
         <Logo />
-       <NavBar />        
+        <NavBar />        
       </div>
     </header>
   );
