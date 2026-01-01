@@ -1,4 +1,4 @@
-const Card3D = ({ children, className = "" }) => {
+export const Card3D = ({ children, className = "" }) => {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 

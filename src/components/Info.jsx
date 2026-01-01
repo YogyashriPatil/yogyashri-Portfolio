@@ -14,7 +14,7 @@ export const Info = () => {
         
         {/* <img src={} */}
     </div>
-    <div className="text-2xl">Artifical interlligence / Machine Learning</div>
+    <div className="text-2xl">Artifical inteligence / Machine Learning</div>
 
   </div>
 };
