@@ -4,7 +4,7 @@ import nodejs from "../assets/nodejs.svg";
 import express from "../assets/express.svg";
 
 export const Info = () => {
-  return <div className="text-white ">
+  return <div className="text-white pl-9.5 ">
     <div className="text-4xl">Full Stack Developer</div>
     <div className="flex gap-10">
         <img src={mongodb} alt="MongoDB" className="h-10 w-10" />

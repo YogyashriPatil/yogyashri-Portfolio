@@ -6,6 +6,7 @@ import AnimatedBG from './components/AnimatedBG';
 import Header from './components/Header';
 import { Info } from './components/Info';
 import { Card3D } from './components/Card';
+import SkillsGlobe from './components/SkillGlobe';
 function App() {
   
   return (
@@ -17,6 +18,7 @@ function App() {
       </div>
 
       <div>
+          <SkillsGlobe />
           {/* <Card3D children={<div>
             hi there
           </div>} /> */}
