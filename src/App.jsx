@@ -7,22 +7,12 @@ import Header from './components/Header';
 import { Info } from './components/Info';
 import { Card3D } from './components/Card';
 import SkillsGlobe from './components/SkillGlobe';
+import TechStack from './components/Techstack';
 function App() {
   
   return (
     <div>
-      {/* <AnimatedBG /> */}
-      <div>
-        <Header name='Yogyashri'/>
-        <Info />
-      </div>
-
-      <div>
-          <SkillsGlobe />
-          {/* <Card3D children={<div>
-            hi there
-          </div>} /> */}
-      </div>
+      <TechStack />
     </div>
   )
 }
