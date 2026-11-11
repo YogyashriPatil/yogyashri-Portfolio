@@ -8,12 +8,14 @@ import { Card3D } from './components/Card';
 import SkillsGlobe from './components/SkillGlobe';
 import TechStack from './components/Techstack';
 import Certificates from "./components/Certificates";
+import GitHubProjects from './components/GitHubProjects';
 function App() {
   
   return (
     <div>
       {/* <TechStack /> */}
       <Certificates />
+      <GitHubProjects />
     </div>
   )
 }
