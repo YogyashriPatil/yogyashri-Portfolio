@@ -13,9 +13,10 @@ function App() {
   
   return (
     <div>
-      {/* <TechStack /> */}
+      <TechStack />
       <Certificates />
       <GitHubProjects />
+      <SkillsGlobe />
     </div>
   )
 }

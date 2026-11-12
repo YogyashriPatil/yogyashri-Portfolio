@@ -1,3 +1,10 @@
+/* 3D technology globe — matches GitHub Projects orange theme */
+:root {
+  --portfolio-orange: #ff9b5e;
+  --portfolio-orange-soft: #ffb477;
+  --portfolio-panel: #191920;
+}
+
 /* 3D technology globe */
 .skills-globe-container {
   width: 100%;
@@ -21,18 +28,18 @@
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  background: rgba(25, 20, 45, 0.95);
-  border: 1px solid rgba(168, 85, 247, 0.5);
-  box-shadow:
-    0 0 15px rgba(147, 51, 234, 0.25),
-    inset 0 0 12px rgba(147, 51, 234, 0.1);
+  background: rgba(25, 25, 32, 0.96);
+  border: 1px solid rgba(255, 155, 94, 0.32);  
+ box-shadow:
+    0 0 15px rgba(255, 155, 94, 0.13),
+    inset 0 0 12px rgba(255, 155, 94, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .globe-skill-icon:hover {
   transform: scale(1.15);
-  border-color: #c084fc;
-  box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+  border-color: #ffb47f;
+  box-shadow: 0 0 25px rgba(255, 155, 94, 0.38);
 }
 
 .technology-logo {

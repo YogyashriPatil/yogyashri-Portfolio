@@ -63,7 +63,7 @@ function Globe() {
       <mesh>
         <sphereGeometry args={[2.4, 32, 32]} />
         <meshBasicMaterial
-          color="#9333ea"
+          color="#ff9b5e"
           wireframe
           transparent
           opacity={0.16}
@@ -94,7 +94,7 @@ export default function SkillsGlobe() {
     <div className="skills-globe-container">
       <Canvas camera={{ position: [0, 0, 8], fov: 45 }} dpr={[1, 2]}>
         <ambientLight intensity={1} />
-        <pointLight position={[5, 5, 5]} intensity={2} color="#a855f7" />
+        <pointLight position={[5, 5, 5]} intensity={2} color="#ff9b5e" />
         <Globe />
         <OrbitControls
           enableZoom={false}
