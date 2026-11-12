@@ -10,6 +10,7 @@ import TechStack from './components/Techstack';
 import Certificates from "./components/Certificates";
 import GitHubProjects from './components/GitHubProjects';
 import Profile from './components/Profile';
+import Languages from './components/Languages';
 function App() {
   
   return (
@@ -19,6 +20,7 @@ function App() {
       <GitHubProjects />
       <SkillsGlobe />
       <Profile />
+      <Languages />
     </div>
   )
 }
