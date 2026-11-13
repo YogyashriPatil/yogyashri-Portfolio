@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Github from "./components/Github";
+import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Certifications from "./components/Certifications";
 function App() {
@@ -30,6 +32,8 @@ function App() {
         <Skills />
         <Experience />
         <Certifications />
+        <Projects />
+        <Github />
         <div className="container" style={{ paddingTop: "100px" }}>
           <h1 className="section-heading">
             Welcome to <span>Yogyashri's Portfolio</span>
