@@ -1,0 +1,407 @@
+
+/* =====================================
+   ABOUT SECTION - LINUX THEME
+===================================== */
+
+.about-section {
+  background: #0b0b0b;
+  padding: 110px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADING */
+
+.about-heading {
+  margin-bottom: 55px;
+}
+
+.about-command {
+  display: inline-block;
+  color: #ff8a24;
+  font-family: 'Fira Code', monospace;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.about-heading h2 {
+  font-size: clamp(35px, 5vw, 52px);
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.about-heading h2 span {
+  color: #ff8a24;
+}
+
+.about-heading p {
+  color: #888;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* MAIN GRID */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* TERMINAL */
+
+.about-terminal {
+  background: #131313;
+  border: 1px solid #303030;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.about-terminal:hover {
+  border-color: #ff8a2466;
+  box-shadow: 0 10px 40px #ff8a240b;
+}
+
+.about-terminal-header {
+  height: 48px;
+  background: #1b1b1b;
+  border-bottom: 1px solid #303030;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-family: 'Fira Code', monospace;
+  color: #888;
+  font-size: 11px;
+}
+
+.about-window-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.about-window-dots span {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+
+.about-window-dots span:nth-child(2) {
+  background: #febc2e;
+}
+
+.about-window-dots span:nth-child(3) {
+  background: #28c840;
+}
+
+.terminal-file-icon {
+  color: #ff8a24;
+  font-size: 9px;
+}
+
+/* CODE BODY */
+
+.about-terminal-body {
+  padding: 27px 22px;
+  font-family: 'Fira Code', monospace;
+  overflow-x: auto;
+}
+
+.about-code-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ddd;
+  font-size: 12px;
+  line-height: 2.2;
+  white-space: nowrap;
+}
+
+.about-code-line.indent {
+  padding-left: 25px;
+}
+
+.line-number {
+  color: #555;
+  min-width: 20px;
+  user-select: none;
+}
+
+.code-orange {
+  color: #ff8a24;
+}
+
+.code-key {
+  color: #83b5ff;
+}
+
+.code-green {
+  color: #91d89b;
+}
+
+.code-purple {
+  color: #c9a2ff;
+}
+
+.about-divider {
+  height: 1px;
+  background: #303030;
+  margin: 22px 0;
+}
+
+.about-description {
+  color: #999;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.about-terminal-bottom {
+  margin-top: 22px;
+  color: #ff8a24;
+  font-size: 11px;
+}
+
+.about-blink {
+  animation: blink 1s infinite;
+  margin-left: 5px;
+}
+
+/* RIGHT INFORMATION */
+
+.about-info-heading {
+  color: #eee;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.info-hash {
+  color: #ff8a24;
+  margin-right: 8px;
+  font-family: 'Fira Code', monospace;
+}
+
+/* DETAIL CARDS */
+
+.about-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.about-detail-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #151515;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  padding: 18px 13px;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.7s ease both;
+}
+
+.about-detail-card:hover {
+  border-color: #ff8a24;
+  background: #1c1712;
+  transform: translateY(-5px);
+}
+
+.detail-icon {
+  font-size: 23px;
+}
+
+.detail-label {
+  color: #ff8a24;
+  font-family: 'Fira Code', monospace;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.about-detail-card h3 {
+  color: #ddd;
+  font-size: 11px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+/* ACHIEVEMENTS */
+
+.achievements-box {
+  background: #131313;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.achievements-heading {
+  color: #ff8a24;
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.achievements-heading span {
+  color: #777;
+}
+
+.achievement-item {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #292929;
+}
+
+.achievement-item:last-child {
+  border-bottom: none;
+}
+
+.achievement-number {
+  color: #ff8a24;
+  font-family: 'Fira Code', monospace;
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.achievement-item h4 {
+  color: #eee;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.achievement-item p {
+  color: #888;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* EDUCATION JOURNEY */
+
+.about-journey {
+  margin-top: 70px;
+}
+
+.journey-title {
+  font-family: 'Fira Code', monospace;
+  color: #eee;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.journey-title span {
+  color: #ff8a24;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.journey-card {
+  position: relative;
+  padding: 25px;
+  background: #141414;
+  border: 1px solid #303030;
+  border-radius: 9px;
+  transition: all 0.3s ease;
+}
+
+.journey-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff8a24;
+  box-shadow: 0 10px 30px #ff8a2410;
+}
+
+.journey-icon {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.journey-tag {
+  display: inline-block;
+  color: #ffad5c;
+  background: #ff8a2414;
+  border: 1px solid #ff8a2433;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 9px;
+  margin-bottom: 13px;
+}
+
+.journey-card h3 {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.journey-card p {
+  color: #999;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.journey-meta {
+  display: block;
+  color: #ff8a24;
+  font-family: 'Fira Code', monospace;
+  font-size: 11px;
+  margin-top: 17px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 75px 0;
+  }
+
+  .about-container {
+    width: 92%;
+  }
+
+  .about-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-terminal-body {
+    padding: 20px 12px;
+  }
+
+  .about-code-line {
+    font-size: 10px;
+  }
+
+  .about-heading {
+    margin-bottom: 35px;
+  }
+}

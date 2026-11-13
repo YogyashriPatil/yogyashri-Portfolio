@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import BootScreen from "./components/BootScreen";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Certifications from "./components/Certifications";
 function App() {
   const [booted, setBooted] = useState(
     sessionStorage.getItem("portfolioBooted") === "true"
@@ -22,7 +26,10 @@ function App() {
       <main>
         {/* Your portfolio sections will go here */}
         <Hero />
-
+        <About />
+        <Skills />
+        <Experience />
+        <Certifications />
         <div className="container" style={{ paddingTop: "100px" }}>
           <h1 className="section-heading">
             Welcome to <span>Yogyashri's Portfolio</span>
