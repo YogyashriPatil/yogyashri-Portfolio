@@ -1,0 +1,63 @@
+
+/* FADE IN */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* GLOW */
+
+@keyframes orangeGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px #ff8a2433;
+  }
+  50% {
+    box-shadow: 0 0 25px #ff8a2466;
+  }
+}
+
+/* BLINKING TERMINAL CURSOR */
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background: var(--orange);
+  margin-left: 5px;
+  vertical-align: middle;
+  animation: blink 1s infinite;
+}
+
+/* FLOAT */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* COMMON ANIMATION CLASSES */
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}

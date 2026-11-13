@@ -1,0 +1,189 @@
+
+/* =================================
+   LINUX PORTFOLIO - GLOBAL THEME
+================================= */
+
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #141414;
+  --bg-card: #191919;
+
+  --orange: #ff8a24;
+  --orange-light: #ffad5c;
+  --orange-dark: #d96b0b;
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #a3a3a3;
+  --text-muted: #707070;
+
+  --border: #292929;
+
+  --font-main: 'Inter', sans-serif;
+  --font-terminal: 'Fira Code', monospace;
+
+  --transition: all 0.3s ease;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Selection */
+
+::selection {
+  background: var(--orange);
+  color: #000;
+}
+
+/* Links */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}
+
+/* Common container */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section spacing */
+
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Section heading */
+
+.section-heading {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-heading span {
+  color: var(--orange);
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+/* Orange highlight */
+
+.orange {
+  color: var(--orange);
+}
+
+/* Terminal text */
+
+.terminal-text {
+  font-family: var(--font-terminal);
+  color: var(--orange);
+}
+
+/* Buttons */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 25px;
+  border-radius: 6px;
+  background: var(--orange);
+  color: #000;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: var(--orange-light);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 25px #ff8a2433;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  border: 1px solid var(--orange);
+  border-radius: 6px;
+  color: var(--orange);
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background: var(--orange);
+  color: #000;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+}

@@ -1,28 +1,36 @@
-import { useState } from 'react'
-import './App.css'
-import { motion } from 'framer-motion';
-import AnimatedBG from './components/AnimatedBG';
-import Header from './components/Header';
-import { Info } from './components/Info';
-import { Card3D } from './components/Card';
-import SkillsGlobe from './components/SkillGlobe';
-import TechStack from './components/Techstack';
-import Certificates from "./components/Certificates";
-import GitHubProjects from './components/GitHubProjects';
-import Profile from './components/Profile';
-import Languages from './components/Languages';
+
+import React, { useState } from "react";
+import BootScreen from "./components/BootScreen";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 function App() {
-  
+  const [booted, setBooted] = useState(
+    sessionStorage.getItem("portfolioBooted") === "true"
+  );
+
+  const handleBootComplete = () => {
+    sessionStorage.setItem("portfolioBooted", "true");
+    setBooted(true);
+  };
+
   return (
-    <div>
-      <TechStack />
-      <Certificates />
-      <GitHubProjects />
-      <SkillsGlobe />
-      <Profile />
-      <Languages />
-    </div>
-  )
+    <>
+      {!booted && (
+        <BootScreen onComplete={handleBootComplete} />
+      )}
+      <Navbar />
+      <main>
+        {/* Your portfolio sections will go here */}
+        <Hero />
+
+        <div className="container" style={{ paddingTop: "100px" }}>
+          <h1 className="section-heading">
+            Welcome to <span>Yogyashri's Portfolio</span>
+          </h1>
+        </div>
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
